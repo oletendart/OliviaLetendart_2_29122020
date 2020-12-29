@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3390a42b-fb1c-4688-870c-ff6ed09d8338" name="Default Changelist" comment="Initialize project, create file index.html and style.css">
+    <list default="true" id="3390a42b-fb1c-4688-870c-ff6ed09d8338" name="Default Changelist" comment="Create doctype html in the file index.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
       <updated>1609180623396</updated>
       <workItem from="1609180624481" duration="101000" />
       <workItem from="1609234926168" duration="178000" />
-      <workItem from="1609237187889" duration="286000" />
+      <workItem from="1609237187889" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="Initialize project, create file index.html and style.css">
       <created>1609237316913</created>
@@ -50,7 +51,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609237316913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create doctype html in the file index.html">
+      <created>1609237498610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609237498610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,6 +66,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize project, create file index.html and style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize project, create file index.html and style.css" />
+    <MESSAGE value="Create doctype html in the file index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create doctype html in the file index.html" />
   </component>
 </project>
