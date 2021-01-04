@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
-    <title>Titre</title>
+    <title>Reservia</title>
+
+    <link href="print.css" rel="stylesheet" media="print">
+    <link href="mobile.css" rel="stylesheet" media="screen and (max-width: 600px)">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 </head>
     <body>
-        <header>
+        <header style="background-color: lightcoral;">
             <nav>
                 <ul>
                     <li>
@@ -23,11 +30,13 @@
                 </ul>
             </nav>
         </header>
-    <form>
+    <form method="get">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <div>
-            Marseille, France
+            <i class="fas fa-map-marker-alt"></i>
+            <input value="Marseille, France"/>
+            <button></button>
         </div>
         <label>Filtres</label>
         <button>Economique</button>
