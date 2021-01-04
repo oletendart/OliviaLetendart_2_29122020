@@ -1,54 +1,31 @@
-@media all and (max-width: 640px) {
-    /* Remove default margin */
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    ul,
-    ol,
-    li,
-    figure,
-    figcaption,
-    blockquote,
-    dl,
-    dd {
-        margin: 0;
-    }
-    /* Remote default padding */
-    ul,
-    ol {
-        padding: 0;
-    }
-    /* Remove list styles on ul, ol elements with a class attribute */
-    ul,
-    ol {
-        list-style: none;
-    }
-    /* Make images easier to work with */
-    img {
-        max-width: 100%;
-        display: block;
-    }
-    /* Grid for the header */
-    header {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-    "img_reservia inscription"
-    "heber_activ heber_activ";
-    }
-    .img_reservia {
-        grid-area: img_reservia;
-    }
-    .inscription {
-        grid-area: inscription;
-    }
-    .heber_activ {
-        grid-area: heber_activ;
-    }
+:root {
+    font-size: 10px;
+}
+
+/* Grid for the header */
+.img_reservia {
+    grid-area: img_reservia;
+}
+
+.inscription {
+    grid-area: inscription;
+}
+
+.hebergement {
+    grid-area: hebergement;
+}
+
+.activity {
+    grid-area: activity;
+}
+
+#nav_primary ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    grid-template-areas:
+        "img_reservia inscription"
+        "hebergement activity";
 }
 
