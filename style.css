@@ -6,8 +6,8 @@
     h3,
     h4,
     p,
-    ul[class],
-    ol[class],
+    ul,
+    ol,
     li,
     figure,
     figcaption,
@@ -17,19 +17,38 @@
         margin: 0;
     }
     /* Remote default padding */
-    ul[class],
-    ol[class] {
+    ul,
+    ol {
         padding: 0;
     }
     /* Remove list styles on ul, ol elements with a class attribute */
-    ul[class],
-    ol[class] {
+    ul,
+    ol {
         list-style: none;
     }
     /* Make images easier to work with */
     img {
         max-width: 100%;
         display: block;
+    }
+    /* Grid for the header */
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+    "img_reservia inscription"
+    "nav nav";
+    }
+    header > nav > ul > li > img {
+        grid-area: img_reservia;
+    }
+    header > .inscription {
+        grid-area: inscription;
+    }
+    header > nav > ul > li > a > .hebergement , .activity {
+        grid-area: nav;
     }
 }
 
