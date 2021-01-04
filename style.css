@@ -39,16 +39,16 @@
         gap: 0px 0px;
         grid-template-areas:
     "img_reservia inscription"
-    "nav nav";
+    "heber_activ heber_activ";
     }
-    header > nav > ul > li > img {
+    .img_reservia {
         grid-area: img_reservia;
     }
-    header > .inscription {
+    .inscription {
         grid-area: inscription;
     }
-    header > nav > ul > li > a > .hebergement , .activity {
-        grid-area: nav;
+    .heber_activ {
+        grid-area: heber_activ;
     }
 }
 
