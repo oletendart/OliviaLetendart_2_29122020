@@ -11,11 +11,15 @@
 
 .inscription {
     grid-area: inscription;
+    color: #0065fc;
+    font-weight: bold;
 }
 
-.hebergement {
+.hebergements {
     grid-area: hebergement;
-    text-decoration: underline blue;
+}
+.hebergements:active {
+    color: #0065fc;
 }
 
 .activity {
@@ -32,5 +36,35 @@
         "hebergement activity";
     align-items: center;
     justify-items: center;
+    font-size: 1.7rem;
 }
-
+/* Form CSS */
+form {
+   padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+.filter {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.information {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+form h1 {
+    font-size: 2.2rem;
+    line-height: normal;
+}
+form p {
+    font-size: 1.6rem;
+}
+form button {
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    border: 0.1rem grey solid;
+    margin: 0.5rem;
+}
+form  .economique > i{
+    color: #0065fc;
+    padding-right: 1rem;
+}
