@@ -1,0 +1,36 @@
+:root {
+    font-size: 10px;
+}
+
+/* Grid for the header */
+.img_reservia {
+    grid-area: img_reservia;
+    width: 50%;
+    height: auto;
+}
+
+.inscription {
+    grid-area: inscription;
+}
+
+.hebergement {
+    grid-area: hebergement;
+    text-decoration: underline blue;
+}
+
+.activity {
+    grid-area: activity;
+}
+
+#nav_primary ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    grid-template-areas:
+        "img_reservia inscription"
+        "hebergement activity";
+    align-items: center;
+    justify-items: center;
+}
+
