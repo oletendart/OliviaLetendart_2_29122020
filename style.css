@@ -5,6 +5,8 @@
 /* Grid for the header */
 .img_reservia {
     grid-area: img_reservia;
+    width: 50%;
+    height: auto;
 }
 
 .inscription {
@@ -13,6 +15,7 @@
 
 .hebergement {
     grid-area: hebergement;
+    text-decoration: underline blue;
 }
 
 .activity {
@@ -27,5 +30,7 @@
     grid-template-areas:
         "img_reservia inscription"
         "hebergement activity";
+    align-items: center;
+    justify-items: center;
 }
 
