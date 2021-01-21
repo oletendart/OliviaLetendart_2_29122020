@@ -1,5 +1,9 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 :root {
     font-size: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Grid for the header */
@@ -7,23 +11,41 @@
     grid-area: img_reservia;
     width: 50%;
     height: auto;
+    justify-self: start;
+    padding-left: 20px;
 }
 
 .inscription {
     grid-area: inscription;
-    color: #0065fc;
+    color: #0065FC;
     font-weight: bold;
+    justify-self: end;
+    padding-right: 20px;
 }
 
 .hebergements {
     grid-area: hebergement;
+    width: 100%;
+    text-align: center;
 }
-.hebergements:active {
-    color: #0065fc;
+.hebergements a {
+    height: 50px;
+    line-height: 50px;
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    display: block;
 }
-
 .activity {
     grid-area: activity;
+    width: 100%;
+    text-align: center;
+}
+.activity a {
+    height: 50px;
+    line-height: 50px;
+    color: #0065FC;
+    border-bottom: 2px solid #F2F2F2;
+    display: block;
 }
 
 #nav_primary ul {
@@ -38,33 +60,135 @@
     justify-items: center;
     font-size: 1.7rem;
 }
+
 /* Form CSS */
 form {
-   padding-left: 1.5rem;
-    padding-top: 1.5rem;
-}
-.filter {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-.information {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-form h1 {
-    font-size: 2.2rem;
-    line-height: normal;
+   padding: 1.5rem;
 }
 form p {
     font-size: 1.6rem;
 }
-form button {
-    border-radius: 2rem;
-    font-size: 1.6rem;
-    border: 0.1rem grey solid;
-    margin: 0.5rem;
+.filter {
+    padding: 20px 0;
+    display: flex;
 }
-form  .economique > i{
-    color: #0065fc;
-    padding-right: 1rem;
+.iconsearch {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    background-color: lightcoral;
+    font-size: 20px;
+    line-height: 40px;
 }
+.filter input {
+    padding: 0 2rem;
+    width: calc(100% - 70px);
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+}
+.filter button {
+    margin-left: -10px;
+    border-radius: 10px;
+    width: 40px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+/* Filtre in the form */
+
+label {
+    font-size: 1.5rem;
+    display: block;
+}
+.economique {
+    border-radius: 50px;
+    padding: 0;
+    border: 2px solid gray;
+    font-size: 1.7rem;
+}
+form span {
+    padding: 0 1rem;
+}
+
+.familial {
+    border-radius: 50px;
+    padding: 0;
+    border: 2px solid gray;
+    font-size: 1.7rem;
+}
+
+.romantique {
+    border-radius: 50px;
+    padding: 0;
+    border: 2px solid gray;
+    font-size: 1.7rem;
+}
+
+.animaux {
+    border-radius: 50px;
+    padding: 0;
+    border: 2px solid gray;
+    font-size: 1.7rem;
+}
+.icons {
+    background-color: cadetblue;
+    border-radius: 50%;
+    margin: -2px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    color: #0065FC;
+}
+
+.information i {
+
+}
+
+/* section populaire style */
+.populary {
+    background-color: lightcoral;
+    padding: 30px 20px;
+}
+section header {
+    display: flex;
+    justify-content: space-between;
+}
+.cart {
+    display: block;
+    height: auto;
+    line-height: inherit;
+    border: none;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 20px;
+}
+.cart figure {
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    height: 140px;
+}
+figure img {
+    width: 40%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+figure figcaption {
+    width: 60%;
+    padding: 15px;
+}
+.sparkles {
+    color: blue;
+
+}
+
+
+
