@@ -163,7 +163,7 @@ form span {
 }
 
 #populary h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 section header {
@@ -177,11 +177,11 @@ section header {
 }
 
 section h4 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .cart {
@@ -243,7 +243,7 @@ figure figcaption {
     box-shadow: 0 5px 5px #F2F2F2;
 }
 
-#rental .card img {
+.card img {
     width: 100%;
     object-fit: cover;
     height: 150px;
@@ -260,9 +260,15 @@ figure figcaption {
 }
 
 /* touristic */
-.touristic {
+#touristic {
     padding: 30px 20px;
 }
-
+#touristic h3 {
+    font-size: 1.7rem;
+}
+#touristic figcaption {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 
