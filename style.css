@@ -28,6 +28,7 @@
     width: 100%;
     text-align: center;
 }
+
 .hebergements a {
     height: 50px;
     line-height: 50px;
@@ -35,15 +36,17 @@
     border-bottom: 2px solid #0065FC;
     display: block;
 }
+
 .activity {
     grid-area: activity;
     width: 100%;
     text-align: center;
 }
+
 .activity a {
     height: 50px;
     line-height: 50px;
-    color: #0065FC;
+    color: gray;
     border-bottom: 2px solid #F2F2F2;
     display: block;
 }
@@ -63,76 +66,73 @@
 
 /* Form CSS */
 form {
-   padding: 1.5rem;
+    padding: 1.5rem;
 }
+
 form p {
     font-size: 1.6rem;
 }
-.filter {
+
+#searchbar {
     padding: 20px 0;
     display: flex;
 }
-.iconsearch {
+
+#searchbar > i {
     width: 40px;
     height: 40px;
     text-align: center;
     border-radius: 10px 0 0 10px;
-    background-color: lightcoral;
+    background-color: #F2F2F2;
     font-size: 20px;
     line-height: 40px;
 }
-.filter input {
+
+#searchbar input {
     padding: 0 2rem;
     width: calc(100% - 70px);
     border: none;
     font-size: 15px;
     font-weight: bold;
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
+    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
 }
-.filter button {
+
+#searchbar button {
     margin-left: -10px;
     border-radius: 10px;
     width: 40px;
-    background-color: blueviolet;
+    background-color: #0065FC;
     border: none;
     color: white;
     height: 40px;
     line-height: 40px;
+    font-size: 1.5rem;
 }
+
 /* Filtre in the form */
 
-label {
+form label {
     font-size: 1.5rem;
+    margin: 0 0 1rem 0;
     display: block;
+    font-weight: bold;
 }
+
 form span {
     padding: 0 1rem;
 }
-.economique {
+
+.filter-btn {
     border-radius: 50px;
-    border: 2px solid gray;
+    border: 2px solid #F2F2F2;
     font-size: 1.7rem;
-}
-.familial {
-    border-radius: 50px;
-    border: 2px solid gray;
-    font-size: 1.7rem;
+    padding: 0;
+    margin: 0 1rem 1rem 0;
 }
 
-.romantique {
-    border-radius: 50px;
-    border: 2px solid gray;
-    font-size: 1.7rem;
-}
-
-.animaux {
-    border-radius: 50px;
-    border: 2px solid gray;
-    font-size: 1.7rem;
-}
-.icons {
-    background-color: cadetblue;
+.filter-btn > .icons {
+    background-color: #DEEBFF;
     border-radius: 50%;
     margin: -2px;
     width: 40px;
@@ -140,13 +140,20 @@ form span {
     height: 40px;
     color: #0065FC;
 }
+
 .information {
-  padding: 2rem 0;
+    padding: 2rem 0;
 }
-.information .circle {
+
+.information > i {
     border-radius: 50%;
     border: gray 1px solid;
     color: blue;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
 }
 
 /* section populaire style */
@@ -154,19 +161,24 @@ form span {
     background-color: lightcoral;
     padding: 30px 20px;
 }
+
 section header {
     display: flex;
     justify-content: space-between;
 }
+
 section header .chart {
     font-size: 2rem;
 }
+
 section h4 {
     font-size: 1.5rem;
 }
+
 section p {
     font-size: 1.2rem;
 }
+
 .cart {
     display: block;
     height: auto;
@@ -176,6 +188,7 @@ section p {
     background-color: white;
     border-radius: 20px;
 }
+
 .cart figure {
     color: black;
     border-radius: 20px;
@@ -183,16 +196,19 @@ section p {
     padding: 5px;
     height: 140px;
 }
+
 .populary figure img {
     width: 40%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+
 figure figcaption {
     width: 60%;
     padding: 15px;
 }
+
 .populary .sparkles {
     color: blue;
     padding: 3rem 0;
@@ -203,6 +219,7 @@ figure figcaption {
 .rental {
     padding: 30px 20px;
 }
+
 .card {
     display: block;
     height: auto;
@@ -212,12 +229,14 @@ figure figcaption {
     background-color: white;
     border-radius: 20px;
 }
+
 .card img {
     width: 100%;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
 .card .sparkles {
     color: blue;
 }
