@@ -106,33 +106,28 @@ label {
     font-size: 1.5rem;
     display: block;
 }
-.economique {
-    border-radius: 50px;
-    padding: 0;
-    border: 2px solid gray;
-    font-size: 1.7rem;
-}
 form span {
     padding: 0 1rem;
 }
-
+.economique {
+    border-radius: 50px;
+    border: 2px solid gray;
+    font-size: 1.7rem;
+}
 .familial {
     border-radius: 50px;
-    padding: 0;
     border: 2px solid gray;
     font-size: 1.7rem;
 }
 
 .romantique {
     border-radius: 50px;
-    padding: 0;
     border: 2px solid gray;
     font-size: 1.7rem;
 }
 
 .animaux {
     border-radius: 50px;
-    padding: 0;
     border: 2px solid gray;
     font-size: 1.7rem;
 }
@@ -145,9 +140,13 @@ form span {
     height: 40px;
     color: #0065FC;
 }
-
-.information i {
-
+.information {
+  padding: 2rem 0;
+}
+.information .circle {
+    border-radius: 50%;
+    border: gray 1px solid;
+    color: blue;
 }
 
 /* section populaire style */
@@ -158,6 +157,15 @@ form span {
 section header {
     display: flex;
     justify-content: space-between;
+}
+section header .chart {
+    font-size: 2rem;
+}
+section h4 {
+    font-size: 1.5rem;
+}
+section p {
+    font-size: 1.2rem;
 }
 .cart {
     display: block;
@@ -175,7 +183,7 @@ section header {
     padding: 5px;
     height: 140px;
 }
-figure img {
+.populary figure img {
     width: 40%;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -185,9 +193,38 @@ figure figcaption {
     width: 60%;
     padding: 15px;
 }
-.sparkles {
+.populary .sparkles {
     color: blue;
+    padding: 3rem 0;
 
+}
+
+/* Rental */
+.rental {
+    padding: 30px 20px;
+}
+.card {
+    display: block;
+    height: auto;
+    line-height: inherit;
+    border: none;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 20px;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.card .sparkles {
+    color: blue;
+}
+
+/* touristic */
+.touristic {
+    padding: 30px 20px;
 }
 
 
