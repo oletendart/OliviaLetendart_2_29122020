@@ -157,9 +157,13 @@ form span {
 }
 
 /* section populaire style */
-.populary {
-    background-color: lightcoral;
+#populary {
+    background-color: #F2F2F2;
     padding: 30px 20px;
+}
+
+#populary h2 {
+    font-size: 1.7rem;
 }
 
 section header {
@@ -167,8 +171,9 @@ section header {
     justify-content: space-between;
 }
 
-section header .chart {
+#populary header > i {
     font-size: 2rem;
+    line-height: 25px;
 }
 
 section h4 {
@@ -197,7 +202,7 @@ section p {
     height: 140px;
 }
 
-.populary figure img {
+#populary figure img {
     width: 40%;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -207,19 +212,26 @@ section p {
 figure figcaption {
     width: 60%;
     padding: 15px;
+    position: relative;
 }
 
-.populary .sparkles {
-    color: blue;
-    padding: 3rem 0;
+#populary .sparkles {
+    color: #0065FC;
+    bottom: 0;
+    position: absolute;
+}
 
+.silver {
+    color: silver;
 }
 
 /* Rental */
-.rental {
+#rental {
     padding: 30px 20px;
 }
-
+#rental h3 {
+    font-size: 2rem;
+}
 .card {
     display: block;
     height: auto;
@@ -228,17 +240,23 @@ figure figcaption {
     margin: 20px 0;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0 5px 5px #F2F2F2;
 }
 
-.card img {
+#rental .card img {
     width: 100%;
     object-fit: cover;
+    height: 150px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
 .card .sparkles {
-    color: blue;
+    color: #0065FC;
+}
+#rental a:last-child {
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 /* touristic */
