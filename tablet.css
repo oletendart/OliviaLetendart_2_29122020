@@ -1,0 +1,126 @@
+#populary figure img {
+    width: 30%;
+}
+
+/* grid for section rental */
+#hebergement {
+    grid-area: hebergement;
+}
+
+#cannebiere {
+    grid-area: cannebiere;
+}
+
+#port {
+    grid-area: port;
+}
+
+#mouettes {
+    grid-area: mouettes;
+}
+
+#mer {
+    grid-area: mer;
+}
+
+#panier {
+    grid-area: panier;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#amina {
+    grid-area: amina;
+}
+
+#rental {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    grid-template-areas:
+    "hebergement hebergement"
+    "cannebiere port"
+    "mouettes mer"
+    "panier amina"
+    "plus plus";
+}
+
+/* grid for section activity */
+#activity {
+    grid-area: activity;
+}
+
+#old_port {
+    grid-area: old_port;
+}
+
+#pomegues {
+    grid-area: pomegues;
+}
+
+#frioul {
+    grid-area: frioul;
+}
+
+#calanques {
+    grid-area: calanques;
+}
+
+#garde {
+    grid-area: garde;
+}
+
+#longchamp {
+    grid-area: longchamp;
+}
+
+#touristic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    grid-template-areas:
+    "activity activity"
+    "old_port pomegues"
+    "frioul calanques"
+    "garde longchamp";
+}
+
+/* footer grid */
+
+#about {
+    grid-area: about;
+}
+
+#accommodations {
+    grid-area: accommodations;
+}
+
+#assistance {
+    grid-area: assistance;
+}
+
+#list_assistance {
+    grid-area: list_assistance;
+}
+
+#list_about {
+    grid-area: list_about;
+}
+
+#list_accomodations {
+    grid-area: list_accomodations;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0 0;
+    grid-template-areas:
+    "about accommodations assistance"
+    "list_about list_accomodations list_assistance";
+}
