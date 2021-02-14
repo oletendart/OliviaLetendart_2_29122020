@@ -1,0 +1,56 @@
+#nav_primary {
+    grid-area: nav;
+}
+form {
+    grid-area: form;
+}
+#rental {
+    grid-area: rental;
+}
+#populary {
+    grid-area: populary;
+}
+#touristic {
+    grid-area: touristic;
+}
+footer {
+    grid-area: footer;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "nav nav"
+            "form form"
+            "rental populary"
+            "touristic touristic"
+            "footer footer";
+}
+#nav_primary ul {
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img_reservia inscription hebergement activity";
+
+}
+#nav_primary .img_reservia img {
+    height: 50px;
+    margin: 1.5rem;
+}
+#nav_primary li {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+}
+.hebergements a {
+    border: none;
+    border-top: 2px solid #0065FC;
+}
+.activity a {
+    border: none;
+    border-top: 2px solid #F2F2F2;
+}
+/* form */
+#searchbar input {
+    width: calc(100% - 75%);
+}
