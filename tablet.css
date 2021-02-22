@@ -4,35 +4,34 @@
 
 /* grid for section rental */
 #hebergement {
-    grid-area: hebergement;
+    grid-area: rental_title;
 }
 
 #cannebiere {
-    grid-area: cannebiere;
+    grid-area: rental_card_one;
 }
 
 #port {
-    grid-area: port;
+    grid-area: rental_card_two;
 }
 
 #mouettes {
-    grid-area: mouettes;
+    grid-area: rental_card_three;
 }
 
 #mer {
-    grid-area: mer;
+    grid-area: rental_card_four;
 }
 
 #panier {
-    grid-area: panier;
+    grid-area: rental_card_five;
+}
+#amina {
+    grid-area: rental_card_six;
 }
 
 #plus {
-    grid-area: plus;
-}
-
-#amina {
-    grid-area: amina;
+    grid-area: rental_plus;
 }
 
 #rental {
@@ -41,40 +40,40 @@
     grid-template-rows: auto;
     grid-gap: 3rem;
     grid-template-areas:
-    "hebergement hebergement"
-    "cannebiere port"
-    "mouettes mer"
-    "panier amina"
-    "plus plus";
+    "rental_title rental_title"
+    "rental_card_one rental_card_two"
+    "rental_card_three rental_card_four"
+    "rental_card_five rental_card_six"
+    "rental_plus rental_plus";
 }
 
 /* grid for section activity */
-#activity {
-    grid-area: activity;
+#touristic h3 {
+    grid-area: touristic_title;
 }
 
-#old_port {
-    grid-area: old_port;
+#touristic a:nth-child(2) {
+    grid-area: touristic_card_one;
 }
 
-#pomegues {
-    grid-area: pomegues;
+#touristic a:nth-child(3) {
+    grid-area: touristic_card_two;
 }
 
-#frioul {
-    grid-area: frioul;
+#touristic a:nth-child(4) {
+    grid-area: touristic_card_three;
 }
 
-#calanques {
-    grid-area: calanques;
+#touristic a:nth-child(5) {
+    grid-area: touristic_card_four;
 }
 
-#garde {
-    grid-area: garde;
+#touristic a:nth-child(6) {
+    grid-area: touristic_card_five;
 }
 
-#longchamp {
-    grid-area: longchamp;
+#touristic a:nth-child(7) {
+    grid-area: touristic_card_six;
 }
 
 #touristic {
@@ -83,10 +82,10 @@
     grid-template-rows: auto;
     grid-gap: 3rem;
     grid-template-areas:
-    "activity activity"
-    "old_port pomegues"
-    "frioul calanques"
-    "garde longchamp";
+    "touristic_title touristic_title"
+    "touristic_card_one touristic_card_two"
+    "touristic_card_three touristic_card_four"
+    "touristic_card_five touristic_card_six";
 }
 
 /* footer grid */

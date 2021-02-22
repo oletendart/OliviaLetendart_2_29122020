@@ -62,6 +62,7 @@ button,
 textarea,
 select {
     font: inherit;
+    /*¨padding: 0; */
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */

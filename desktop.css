@@ -1,56 +1,143 @@
 #nav_primary {
     grid-area: nav;
 }
+
 form {
     grid-area: form;
 }
+
 #rental {
     grid-area: rental;
 }
+
 #populary {
     grid-area: populary;
 }
+
 #touristic {
     grid-area: touristic;
 }
+
 footer {
     grid-area: footer;
 }
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-gap: 20px;
     grid-template-areas:
             "nav nav"
             "form form"
             "rental populary"
             "touristic touristic"
             "footer footer";
+    padding: 20px;
 }
-#nav_primary ul {
+
+#nav_primary {
     grid-template-columns: 6fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "img_reservia inscription hebergement activity";
 
 }
+
 #nav_primary .img_reservia img {
     height: 50px;
     margin: 1.5rem;
 }
+
 #nav_primary li {
     display: block;
     height: 80px;
     line-height: 80px;
 }
+
 .hebergements a {
     border: none;
     border-top: 2px solid #0065FC;
 }
+
 .activity a {
     border: none;
     border-top: 2px solid #F2F2F2;
 }
+
 /* form */
 #searchbar input {
     width: calc(100% - 75%);
+}
+
+figure figcaption {
+    width: 100%;
+}
+/* cart */
+.card {
+    margin: 0;
+}
+
+/* sparkles */
+
+.sparkles {
+    bottom: 10px;
+}
+
+/* populary section */
+#populary {
+    border-radius: 50px;
+}
+
+/* rental */
+#rental {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "rental_title rental_title rental_title"
+                        "rental_card_one rental_card_two rental_card_three"
+                        "rental_card_four rental_card_five rental_card_six"
+                        "rental_plus rental_plus rental_plus";
+    background-color: #F2F2F2;
+    border-radius: 50px;
+
+}
+
+/* touristic */
+#touristic h3 {
+    grid-area: touristic_title;
+}
+
+#touristic a:nth-child(2) {
+    grid-area: touristic_card_one;
+}
+
+#touristic a:nth-child(3) {
+    grid-area: touristic_card_two;
+}
+
+#touristic a:nth-child(4) {
+    grid-area: touristic_card_three;
+}
+
+#touristic a:nth-child(5) {
+    grid-area: touristic_card_four;
+}
+
+#touristic a:nth-child(6) {
+    grid-area: touristic_card_five;
+}
+
+#touristic a:nth-child(7) {
+    grid-area: touristic_card_six;
+}
+
+#touristic {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "touristic_title touristic_title touristic_title touristic_title"
+                        "touristic_card_one touristic_card_two touristic_card_four touristic_card_five"
+                        "touristic_card_one touristic_card_three touristic_card_four touristic_card_six";
+}
+
+#touristic .card img {
+    height: calc(100% - 70px);
 }
