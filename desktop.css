@@ -1,4 +1,4 @@
-header {
+#header {
     grid-area: nav;
 }
 
@@ -33,7 +33,6 @@ body {
             "rental populary"
             "touristic touristic"
             "footer footer";
-    padding: 20px;
 }
 
 #nav_primary ul {
@@ -88,8 +87,12 @@ figure figcaption {
 
 /* populary section */
 #populary {
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 180px 180px 180px;
+    grid-gap: 30px;
     border-radius: 50px;
+    margin-right: 20px;
 }
 
 /* rental */
@@ -102,6 +105,7 @@ figure figcaption {
                         "rental_plus rental_plus rental_plus";
     background-color: #F2F2F2;
     border-radius: 50px;
+    margin-left: 20px;
 
 }
 
@@ -136,13 +140,19 @@ figure figcaption {
 
 #touristic {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px repeat(2, 300px);
+    grid-template-rows: 50px 300px 150px 300px;
     grid-template-areas: "touristic_title touristic_title touristic_title touristic_title"
                         "touristic_card_one touristic_card_two touristic_card_four touristic_card_five"
                         "touristic_card_one touristic_card_two touristic_card_four touristic_card_six"
                         "touristic_card_one touristic_card_three touristic_card_four touristic_card_six";
 }
 
-#touristic figure {
-    height: 100%;
+#touristic figcaption {
+    height: 100px;
+}
+
+#touristic .card img {
+    height: calc(100% - 100px);
+    line-height: 100px;
+    padding: 0 10px;
 }

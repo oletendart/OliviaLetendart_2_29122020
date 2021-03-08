@@ -42,6 +42,9 @@
     width: 100%;
     text-align: center;
 }
+.activtiy .card {
+    padding: 0;
+}
 
 .activity a {
     height: 50px;
@@ -236,10 +239,10 @@ figure figcaption {
     height: auto;
     line-height: inherit;
     border: none;
-    margin: 20px 0;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 5px 5px #F2F2F2;
+    box-shadow: 0 5px 10px silver;
+    padding: 5px;
 }
 
 .card img {
