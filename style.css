@@ -86,7 +86,7 @@ form p {
     height: 40px;
     text-align: center;
     border-radius: 10px 0 0 10px;
-    background-color: #F2F2F2;
+    background-color: #0065FC;
     font-size: 20px;
     line-height: 40px;
 }
@@ -182,7 +182,7 @@ section header {
     line-height: 25px;
 }
 
-section h4 {
+section h3 {
     font-size: 1.7rem;
 }
 
@@ -198,6 +198,7 @@ section p {
     margin: 20px 0;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0 5px 10px silver;
 }
 
 .cart figure {
@@ -234,7 +235,7 @@ figure figcaption {
 #rental {
     padding: 30px 20px;
 }
-#rental h3 {
+#rental h2 {
     font-size: 2rem;
 }
 .card {
@@ -289,7 +290,7 @@ footer li {
     padding: 0 1.5rem;
     font-size: 1.7rem;
 }
-footer h5 {
+footer h4 {
     font-size: 1.7rem;
     font-weight: bold;
     padding: 1.5rem;
