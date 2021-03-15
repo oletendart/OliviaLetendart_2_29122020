@@ -52,7 +52,9 @@ body {
     height: 80px;
     line-height: 80px;
 }
-
+#nav_primary li a {
+    line-height: 80px;
+}
 .hebergements a {
     border: none;
     border-top: 2px solid #0065FC;
@@ -67,6 +69,19 @@ body {
 #searchbar input {
     width: calc(100% - 75%);
 }
+#searchbar button {
+    width: auto;
+    border-radius: 0 10px 10px 0;
+}
+#searchbar i {
+    display: none;
+}
+#searchbar span {
+    display: block;
+}
+.filter-btn:hover {
+    background-color: #0065FC;
+}
 
 figure figcaption {
     width: 100%;
@@ -78,7 +93,6 @@ figure figcaption {
 .cart figure {
     height: 100%;
 }
-
 /* sparkles */
 
 .sparkles {
@@ -106,7 +120,6 @@ figure figcaption {
     background-color: #F2F2F2;
     border-radius: 50px;
     margin-left: 20px;
-
 }
 
 /* touristic */
@@ -147,6 +160,13 @@ figure figcaption {
                         "touristic_card_one touristic_card_three touristic_card_four touristic_card_six";
 }
 
+#touristic figure {
+    height: 100%;
+    line-height: 75px;
+}
+#touristic a {
+    margin: 0;
+}
 #touristic figcaption {
     height: 100px;
 }
@@ -154,5 +174,4 @@ figure figcaption {
 #touristic .card img {
     height: calc(100% - 100px);
     line-height: 100px;
-    padding: 0 10px;
 }
