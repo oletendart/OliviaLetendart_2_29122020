@@ -154,7 +154,7 @@ figure figcaption {
 
 #touristic {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 300px 150px 300px;
+    grid-template-rows: 50px 250px 150px 250px;
     grid-template-areas: "touristic_title touristic_title touristic_title touristic_title"
                         "touristic_card_one touristic_card_two touristic_card_four touristic_card_five"
                         "touristic_card_one touristic_card_two touristic_card_four touristic_card_six"
@@ -163,7 +163,7 @@ figure figcaption {
 
 #touristic figure {
     height: 100%;
-    line-height: 75px;
+    line-height: 70px;
 }
 #touristic a {
     margin: 0;
@@ -175,4 +175,11 @@ figure figcaption {
 #touristic .card img {
     height: calc(100% - 100px);
     line-height: 100px;
+}
+
+/* media queries */
+@media screen and (min-width: 770px) and (max-width: 1005px) {
+    #touristic figure {
+        line-height: 30px;
+    }
 }
