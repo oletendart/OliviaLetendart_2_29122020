@@ -135,6 +135,7 @@ form span {
     font-size: 1.7rem;
     padding: 0;
     margin: 0 1rem 1rem 0;
+    background-color: transparent;
 }
 
 .filter-btn > .icons {
